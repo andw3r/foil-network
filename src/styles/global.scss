@@ -1,0 +1,28 @@
+// === base styles === //
+@import "./base/reset";
+@import "./base/fonts";
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Adineue";
+  color: #fff;
+  overflow-x: hidden;
+  &.lock {
+    overflow-y: hidden;
+  }
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: #0a0914;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@import "./base/media";

@@ -1,0 +1,93 @@
+.blockchain {
+  &__container {
+  }
+
+  &__inner {
+    position: relative;
+    justify-content: end;
+    display: flex;
+  }
+
+  &__image {
+    img {
+      pointer-events: none;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      transform: translate(-21%, 0);
+      height: 650px;
+      object-fit: cover;
+
+      @media screen and (max-width: 1200px) {
+        transform: translate(-30%, 0);
+      }
+
+      @media screen and (max-width: 1024px) {
+        width: 84%;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      @media screen and (max-width: 810px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 425px) {
+        width: 120%;
+        left: 40%;
+        zoom: 0.8;
+      }
+    }
+  }
+
+  &__text {
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    max-width: 536px;
+    transform: translate(-40px, 0);
+    margin-bottom: 115px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 44px;
+    background: linear-gradient(265.34deg, #21d4fd 21.26%, #e40ecf 66.55%),
+      #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  &__description {
+    font-family: "Lab Grotesque";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  &__outer {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 60px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__line {
+    margin: 0 auto 50px;
+    max-width: 1600px;
+    border: 1px solid #4c4a5f;
+  }
+}

@@ -1,0 +1,64 @@
+.airdrop {
+  padding: 0 10px;
+  &__image {
+    overflow: hidden;
+    position: relative;
+    border-radius: 7px;
+    img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      transition: all 0.25s ease-out;
+      @media screen and (min-width: 992px) {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .front-image {
+      position: relative;
+      z-index: 2;
+    }
+
+    .background-blur-image {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      filter: blur(30px);
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    margin: 20px 0;
+    font-family: "adineue";
+    font-weight: 700;
+    font-size: 53px;
+    background: linear-gradient(265.34deg, #21d4fd 21.26%, #e40ecf 66.55%),
+      #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    @media screen and (max-width: 576px) {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  &__description {
+    font-family: "Lab Grotesque";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    color: #ffffff;
+    @media screen and (max-width: 576px) {
+      font-size: 13px;
+      line-height: 21px;
+    }
+  }
+}
