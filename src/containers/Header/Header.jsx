@@ -28,37 +28,37 @@ const Header = () => {
 
         const modifier = (index) => index * 1.2 + 0.5;
 
-        gsap.to(cubeRef.current, {
+        TweenLite.to(cubeRef, {
           duration: 1,
           x: xPos * 20 * modifier(1.3),
           y: yPos * 20 * modifier(1.3),
         });
-        gsap.to(cubeRef2.current, {
+        TweenLite.to(cubeRef2, {
           duration: 1,
           x: xPos * 20 * modifier(1),
           y: yPos * 20 * modifier(1),
         });
-        gsap.to(cubeRef3.current, {
+        TweenLite.to(cubeRef3, {
           duration: 1,
           x: xPos * 20 * modifier(2.7),
           y: yPos * 20 * modifier(2.7),
         });
-        gsap.to(cubeRef4.current, {
+        TweenLite.to(cubeRef4, {
           duration: 1,
           x: xPos * 20 * modifier(1.5),
           y: yPos * 20 * modifier(1.5),
         });
-        gsap.to(cubeRef5.current, {
+        TweenLite.to(cubeRef5, {
           duration: 1,
           x: xPos * 20 * modifier(0.5),
           y: yPos * 20 * modifier(0.5),
         });
-        gsap.to(cubeRef6.current, {
+        TweenLite.to(cubeRef6, {
           duration: 1,
           x: xPos * 20 * modifier(1),
           y: yPos * 20 * modifier(1),
         });
-        gsap.to(cubeRef7.current, {
+        TweenLite.to(cubeRef7, {
           duration: 1,
           x: xPos * 20 * modifier(0.8),
           y: yPos * 20 * modifier(0.8),
