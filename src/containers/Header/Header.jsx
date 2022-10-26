@@ -22,11 +22,9 @@ const Header = () => {
 
     window.addEventListener("load", () => {
       body.addEventListener("mousemove", (e) => {
-        const { offsetX, offsetY, target } = e;
-        const { clientWidth, clientHeight } = target;
-
-        const xPos = offsetX / clientWidth - 0.3;
-        const yPos = offsetY / clientHeight - 0.3;
+        
+      const xPos = e.clientX / window.innerWidth - 0.5;
+      const yPos = e.clientY / window.innerHeight - 0.5;
 
         const modifier = (index) => index * 1.2 + 0.5;
 
